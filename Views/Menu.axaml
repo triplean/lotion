@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Lotion.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="600"
+        x:Class="Lotion.Views.Menu"
+        x:DataType="vm:MenuViewModel"
+        Width="500"
+        Height="250"
+        CanResize="False"
+        Title="Lotion">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" ColumnDefinitions="Auto, Auto" RowDefinitions="Auto" ColumnSpacing="20">
+                <StackPanel Grid.Column="0">
+                        <Image Width="80" Source="/Assets/logo.png" />
+                        <TextBlock HorizontalAlignment="Center" Text="Lotion" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="1">
+                        <Button Click="BootstrapperButtonClick">Launch Roblox</Button>
+                        <Button Margin="0,20,0,0">Configure Roblox</Button>
+                </StackPanel>
+        </Grid>
+</Window>
